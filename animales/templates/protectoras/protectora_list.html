@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mis animales </title>
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="/">Animals's Django List</a></h1>
+        </header>
+
+        {% for protectora in protectora_mostrar %}
+            <article>
+                  <h2><a href="">{{ protectora.nombre }}</a></h2>
+                <h2><a href="">{{ protectora.descripcion }}</a></h2>
+                <p>{{ post.text|linebreaksbr}} </p>
+            </article>
+        {% endfor %}
+    </body>
+</html>

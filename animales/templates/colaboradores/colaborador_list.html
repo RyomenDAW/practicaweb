@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mis animales </title>
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="/">Animals's Django List</a></h1>
+        </header>
+
+        {% for colaborador in colaborador_mostrar %}
+            <article>
+                  <h2><a href="">{{ colaborador.nombre }}</a></h2>
+                <h2><a href="">{{ colaborador.cargo }}</a></h2>
+                <p>{{ post.text|linebreaksbr}} </p>
+            </article>
+        {% endfor %}
+    </body>
+</html>
